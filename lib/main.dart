@@ -1,8 +1,7 @@
+import 'package:citas_medicav4/src/page/login.dart';
+import 'package:citas_medicav4/src/page/register_doctor.dart';
+import 'package:citas_medicav4/src/page/view_doctor.dart';
 import 'package:flutter/material.dart';
-import 'package:sistema_medico_v3/src/page/login.dart';
-import 'package:sistema_medico_v3/src/page/register_doctor.dart';
-import 'package:sistema_medico_v3/src/page/view_doctor.dart';
-import 'package:sistema_medico_v3/src/widgets/drawer.dart';
 
 void main() {
   runApp(const MyApp());

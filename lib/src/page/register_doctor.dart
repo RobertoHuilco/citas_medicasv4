@@ -1,3 +1,5 @@
+import 'package:citas_medicav4/src/page/login.dart';
+import 'package:citas_medicav4/src/page/view_doctor.dart';
 import 'package:flutter/material.dart';
 
 class Registro extends StatefulWidget {
@@ -23,6 +25,50 @@ class _RegistroState extends State<Registro> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Formulario'),
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            ListTile(
+              title: const Text('Registrar médico'),
+              onTap: () {
+                Navigator.push(
+                  // Navega a la pantalla de registro de médico al dar clic
+                  context,
+                  MaterialPageRoute(builder: (context) => Registro()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Ver Médicos'),
+              onTap: () {
+                Navigator.push(
+                  // Navega a la pantalla de registro de médico al dar clic
+                  context,
+                  MaterialPageRoute(builder: (context) => ViewDoctor()),
+                );
+                // Aquí puedes agregar la lógica para abrir el formulario de registro de especialidad
+              },
+            ),
+            ListTile(
+              title: const Text('Registrar cita'),
+              onTap: () {
+                // Aquí puedes agregar la lógica para abrir el formulario de registro de cita
+              },
+            ),
+            ListTile(
+              title: const Text('Salir'),
+              onTap: () {
+                Navigator.push(
+                  // Navega a la pantalla de registro de médico al dar clic
+                  context,
+                  MaterialPageRoute(builder: (context) => Login()),
+                );
+                // Aquí puedes agregar la lógica para cerrar la aplicación
+              },
+            ),
+          ],
+        ),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
